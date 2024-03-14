@@ -11,11 +11,10 @@ def teste_busca(busca, ordena=False):
 
     for n in valores_n:
         for q in valores_q:
+            tempo_inicial = time()
             sequencia = cria_sequencia_aleatoria(n)
             chaves_para_buscar = cria_sequencia_aleatoria(q)
             qts_encontrados = 0
-
-            tempo_inicial = time()
 
             if ordena:
                 sequencia.sort()
